@@ -1,6 +1,6 @@
 # Reddit Place
 
-Recreation of [*r/place*](https://reddit.com/r/place) using AWS tools
+Recreation of [*r/place*](https://reddit.com/r/place) “a collaborative canvas on which a single user could only place a single tile every five minutes” using AWS tools
 
 # Architecture
 
