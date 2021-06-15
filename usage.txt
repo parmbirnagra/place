@@ -8,7 +8,7 @@ Options:
   [ -k  | --kill    ]  <1, 2, e2>
 
 Usage: ./orchestraction [-c | --create] COMMAND
-Create commands:
+Create commands in order:
      ro : Create role
      sg : Create security groups
      cc : Create cache subnet group and cluster
@@ -18,7 +18,7 @@ Create commands:
      e2 : Create ec2
 
 Usage: ./orchestraction [-d | --delete] COMMAND
-Delete commands:
+Delete commands in order:
      e2 : Delete all ec2 instances
       1 : Delete ec2 1 instance
       2 : Delete ec2 2 instance
