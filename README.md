@@ -1,6 +1,6 @@
 # Reddit Place
 
-Recreation of r/place using AWS tools
+Recreation of [*r/place*](https://reddit.com/r/place) using AWS tools
 
 # Architecture
 
