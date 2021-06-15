@@ -6,6 +6,8 @@ Recreation of r/place using AWS tools
 
 ## Diagram
 
+![](https://github.com/parmbirnagra/place/blob/main/images/diagram.png?raw=true)
+
 # Running The System
 
 1. Download aws cli and do aws configure with your account:
