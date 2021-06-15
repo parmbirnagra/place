@@ -1,0 +1,9 @@
+# pip install dependencies into my-deployment-package before zipping.
+pip install --target . redis
+
+# Create Lambda Function on AWS cloud
+# Remember to setup lambda_vpc_role execution role before this: https://docs.aws.amazon.com/lambda/latest/dg/services-elasticache-tutorial.html
+aws lambda create-function --function-name getBoard --timeout 15 --memory-size 1024 --zip-file fileb://function.zip --handler app.lambda_handler --runtime python3.8  --role arn:aws:iam::{AWS USER ID}:role/lambda-vpc-role --vpc-config SubnetIds={SUBNET ID1},{SUBNET ID2},SecurityGroupIds={SECURITY GROUP ID}
+
+# Update Lambda Function on AWS cloud
+aws lambda update-function-code --function-name getBoard --zip-file fileb://function.zip

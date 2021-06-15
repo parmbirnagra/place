@@ -1,0 +1,48 @@
+
+Usage: ./orchestration [OPTION] <COMMAND>
+Options:
+  [ -c  | --create  ]  <ro, sg, cc, db, lf, kp, e2>
+  [ -d  | --delete  ]  <e2, 1, 2 kp, lf, db, cc, cg, sg, ro>
+  [ -t  | --status  ]  <cc, lf, e2>
+  [ -s  | --start   ]  <e2>
+  [ -k  | --kill    ]  <1, 2, e2>
+
+Usage: ./orchestraction [-c | --create] COMMAND
+Create commands:
+     ro : Create role
+     sg : Create security groups
+     cc : Create cache subnet group and cluster
+     db : Create database
+     lf : Create lambda functions
+     kp : Create key pair
+     e2 : Create ec2
+
+Usage: ./orchestraction [-d | --delete] COMMAND
+Delete commands:
+     e2 : Delete all ec2 instances
+      1 : Delete ec2 1 instance
+      2 : Delete ec2 2 instance
+     kp : Delete key pair
+     lf : Delete lambda functions
+     db : Delete database
+     cc : Delete cache cluster
+     cg : Delete cache subnet group
+     sg : Delete security groups
+     ro : Delete role
+
+Usage: ./orchestraction [-t | --status] COMMAND
+Status commands:
+     cc : Status cache cluster
+     lf : Status lambda functions
+     e2 : Status ec2
+
+Usage: ./orchestraction [-s | --start] COMMAND
+Start commands:
+     e2 : Start ec2 node servers
+
+Usage: ./orchestraction [-k | --kill] COMMAND
+Kill commands:
+      1 : Kill ec2 1 node server
+      2 : Kill ec2 2 node server
+     e2 : Kill all ec2 node servers
+
